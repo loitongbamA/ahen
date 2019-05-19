@@ -12,6 +12,7 @@ let vline = document.querySelector(".v-line");
 let popAudio = document.querySelector("#pop-audio");
 let hbdMusic = document.querySelector("#hbd-audio");
 let pepeMusic = document.querySelector("#pepe-audio");
+let wistle = document.querySelector("#wistle");
 
 let text1 = document.querySelector("#text-1");
 let text2 = document.querySelector("#text-2");
@@ -52,6 +53,7 @@ ballon.addEventListener("click", function(){
     setTimeout(textAnimate, 2000);
     setTimeout(hbdPlaySound, 25000);
 
+
 })
 
  let textAnimate = function(){
@@ -66,6 +68,6 @@ let ballonBoxCollapse = function(){
 }
 
 let hbdPlaySound = function(){
-
+    wistle.classList.add("wistle-box-opak");
     pepeMusic.play();
 }
